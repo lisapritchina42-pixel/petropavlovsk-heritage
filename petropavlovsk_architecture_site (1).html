@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Интерактивный образовательный путеводитель по архитектурному и историческому наследию Петропавловска." name="description"/>
+<title>Петропавловск: архитектура сквозь время</title>
+<style>
+:root{--ink:#25343b;--muted:#66777b;--paper:#f6f3eb;--cream:#fffdf7;--sand:#e8dfce;--blue:#dce9e9;--teal:#557b7b;--gold:#b38b52;--line:#d9d5c9;--shadow:0 14px 40px #26383b12}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 Georgia,"Times New Roman",serif}a{color:#426d70}button,input{font:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:#f6f3ebed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:13px 0}.brand{font:700 13px/1.3 Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase}.brand span{display:block;color:var(--teal);font-weight:400;letter-spacing:.08em;margin-top:4px}
+nav{display:flex;gap:19px;flex-wrap:wrap}nav a{text-decoration:none;color:var(--ink);font:13px Arial,sans-serif}nav a:hover{color:var(--gold)}
+.hero{padding:82px 0 66px;background:linear-gradient(110deg,#e5e8df 0%,#e8e1d2 54%,#d9e5e5 100%);position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-70px;bottom:-190px;width:520px;height:520px;border:1px solid #8b9b9580;border-radius:50%;box-shadow:0 0 0 24px #ffffff18,0 0 0 50px #ffffff14}
+.eyebrow{font:700 11px Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--teal)}
+h1{font-size:clamp(38px,6vw,72px);line-height:1.04;max-width:800px;margin:18px 0 20px;font-weight:500;letter-spacing:-.035em}
+.hero p{max-width:650px;font-size:19px;color:#48585a}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border:1px solid var(--teal);background:var(--teal);color:white;text-decoration:none;border-radius:3px;font:13px Arial,sans-serif;cursor:pointer}
+.btn.alt{background:transparent;color:var(--ink);border-color:#8c9b96}.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.hero-note{font:italic 15px Georgia;color:#627071;margin-top:30px;max-width:630px}
+section{padding:70px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:28px}.section-head h2{font-size:clamp(28px,4vw,42px);font-weight:500;line-height:1.1;margin:8px 0}.section-head p{max-width:490px;color:var(--muted);margin:0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:35px;max-width:630px}.stat{border-top:1px solid #82928b;padding-top:12px}.stat b{font-size:28px;font-weight:500;display:block}.stat small{font:12px Arial;color:#596a6c}
+.toolbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:20px 0 25px}.search{flex:1;min-width:220px;padding:13px 14px;border:1px solid var(--line);background:var(--cream);border-radius:3px}.filter{padding:12px;border:1px solid var(--line);background:var(--cream);color:var(--ink);border-radius:3px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:var(--cream);border:1px solid var(--line);box-shadow:var(--shadow);display:flex;flex-direction:column;min-height:100%;overflow:hidden}
+.photo{height:205px;background:linear-gradient(135deg,#d5ded9,#ece4d4);position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;color:#617274}
+.photo:before{content:"";position:absolute;inset:16px;border:1px solid #ffffff9c}.photo span{position:relative;font:12px Arial;letter-spacing:.12em;text-transform:uppercase;max-width:260px}
+.card-body{padding:22px 24px 24px}.meta{font:11px Arial;letter-spacing:.13em;text-transform:uppercase;color:var(--teal)}h3{font-size:25px;line-height:1.2;font-weight:500;margin:9px 0}.card p{color:#5c6969;margin:10px 0}.card details{border-top:1px solid var(--line);margin-top:15px;padding-top:12px}.card summary{cursor:pointer;color:#426d70;font:13px Arial,sans-serif}.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px}.detail-grid div{background:#f4f1e9;padding:11px}.detail-grid b{display:block;font:11px Arial;color:var(--teal);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}.detail-grid span{font-size:14px}.sources{font:12px/1.5 Arial;margin-top:14px}.sources a{display:inline-block;margin:3px 10px 3px 0}
+.timeline{background:#e9e7dd}.timeline-list{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:30px}.era{border-top:2px solid var(--gold);padding:14px 5px}.era strong{font-size:24px;font-weight:500}.era p{font-size:14px;color:var(--muted)}
+.mapbox{background:var(--cream);border:1px solid var(--line);padding:12px;box-shadow:var(--shadow)}.mapbox iframe{width:100%;height:430px;border:0}.mapnote{font:13px Arial;color:var(--muted);padding:10px 4px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:22px}.panel{background:var(--cream);padding:25px;border:1px solid var(--line)}.panel h3{margin-top:0}
+.quiz-q{padding:15px 0;border-bottom:1px solid var(--line)}.quiz-q p{margin:0 0 8px}.quiz-q label{display:block;font:14px Arial;padding:5px 0;cursor:pointer}.quiz-result{font-size:18px;margin-top:15px;color:var(--teal)}
+.fact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.fact{background:var(--blue);padding:20px;border:1px solid #d0dddd}.fact b{font-size:18px;font-weight:500;display:block;margin-bottom:7px}
+.tasks{counter-reset:task;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.task{background:var(--cream);border:1px solid var(--line);padding:18px}.task:before{counter-increment:task;content:"0" counter(task);font:12px Arial;color:var(--gold);letter-spacing:.12em}
+.closing{background:#dfe8e5;text-align:center;padding:65px 20px}.closing blockquote{font-size:clamp(24px,4vw,39px);line-height:1.25;max-width:850px;margin:15px auto;font-weight:500}
+footer{padding:30px 0;background:#26383b;color:#e9eee9;font:12px/1.6 Arial}.footlinks{display:flex;flex-wrap:wrap;gap:12px}footer a{color:#d6e5e2}
+.small{font:12px Arial;color:var(--muted)}.hidden{display:none!important}
+@media(max-width:800px){nav{display:none}.cards,.two{grid-template-columns:1fr}.timeline-list{grid-template-columns:1fr 1fr}.fact-grid{grid-template-columns:1fr 1fr}.hero{padding:55px 0}.detail-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.wrap{width:min(100% - 26px,1160px)}section{padding:48px 0}.stats{grid-template-columns:1fr 1fr}.timeline-list,.fact-grid,.tasks{grid-template-columns:1fr}.photo{height:170px}.card-body{padding:18px}.mapbox iframe{height:330px}}
+
+.photo.has-image{display:block;padding:0;overflow:hidden;background:#e6e1d5}
+.photo.has-image:before{z-index:1;pointer-events:none}
+.photo.has-image img{display:block;width:100%;height:100%;min-height:205px;object-fit:cover}
+.photo-credit{position:absolute!important;left:0;right:0;bottom:0;z-index:2;max-width:none!important;
+ padding:25px 24px 11px;background:linear-gradient(transparent,#18282bd9);color:#fff!important;
+ font:11px/1.35 Arial,sans-serif!important;letter-spacing:0!important;text-transform:none!important;text-align:left}
+.photo-credit a{color:#fff;text-decoration:none}
+.photo-credit a:hover{text-decoration:underline}
+@media(max-width:520px){.photo.has-image img{min-height:170px}}
+
+
+/* Обновлённая яркая палитра */
+:root{--ink:#18364a;--muted:#526b78;--paper:#f3f8ff;--cream:#ffffff;--sand:#ffe7bd;--blue:#dff4ff;--teal:#087f8c;--gold:#f29f05;--line:#d4e5ef;--shadow:0 12px 32px #16425c18}
+body{background:linear-gradient(180deg,#f2f8ff 0%,#fffaf0 48%,#f3f8ff 100%);color:var(--ink)}
+header{background:#ffffffed;border-bottom:2px solid #d9edf5}
+.brand{color:#17415a}.brand span{color:#e07a16}
+nav a{font-weight:700;color:#28556b}
+.hero{background:linear-gradient(115deg,#b9eff2 0%,#d8e9ff 43%,#ffe0ae 100%)}
+.hero:after{border-color:#ffffff9c;box-shadow:0 0 0 24px #ffffff35,0 0 0 50px #ffffff24}
+.eyebrow{color:#087f8c}
+h1{color:#163d57;text-shadow:0 2px 0 #ffffff55}
+.hero p{color:#31586b}
+.btn{background:#087f8c;border-color:#087f8c;border-radius:999px;font-weight:700}
+.btn.alt{background:#ffffff8c;border-color:#e08a22;color:#17415a}
+.stat{border-top:3px solid #e79b25}
+.stat b{color:#087f8c}
+section#objects{background:linear-gradient(180deg,#fffaf0,#f1f9ff)}
+.section-head h2{color:#17415a}
+.search,.filter{border:2px solid #d5e8f0;border-radius:12px;background:#fff}
+.card{border:1px solid #d4e7ef;border-radius:18px;box-shadow:0 10px 26px #1b526b16;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-5px);box-shadow:0 16px 34px #1b526b24}
+.photo{background:linear-gradient(135deg,#b8e9e7,#ffe0b3)}
+.photo.has-image img{min-height:225px}
+.card-body{padding:22px 24px 24px}
+.meta{color:#d06b22;font-weight:700}
+h3{color:#17415a}
+.card p{color:#496575}
+.sources{margin-top:16px;padding-top:10px;border-top:1px dashed #c5dce7}
+.sources a{color:#087f8c;font-weight:700;text-decoration:none}
+.sources a:hover{text-decoration:underline}
+.timeline{background:linear-gradient(120deg,#fff0d5,#e5f6fb)}
+.era{border-top:4px solid #f0a12b;background:#ffffffa8;border-radius:0 0 12px 12px;padding:14px 12px}
+.era:nth-child(even){border-color:#1595a3}
+.era strong{color:#17415a}
+.mapbox{border:2px solid #cde4ee;border-radius:16px;overflow:hidden}
+.fact{background:linear-gradient(135deg,#e1f6f5,#fff0d7);border:1px solid #cce6e6;border-radius:14px}
+.task{border:1px solid #cfe4ed;border-radius:14px;background:linear-gradient(135deg,#fff,#f0faff)}
+.task:before{color:#e58b1d;font-weight:700}
+.closing{background:linear-gradient(115deg,#c8f0ec,#dcecff,#ffe6c2)}
+footer{background:#173d52}
+@media(max-width:520px){.photo.has-image img{min-height:180px}}
+
+/* ===== Яркое оформление в стиле детского лэпбука ===== */
+:root{
+ --ink:#24445a;--muted:#5d7480;--paper:#fff9e9;--cream:#fffefa;
+ --sand:#f8dfaa;--blue:#dff3ff;--teal:#168b91;--gold:#f0a43a;
+ --line:#d8e7e8;--shadow:0 12px 28px rgba(37,75,91,.13)
+}
+html{background:#eaf5f6}
+body{
+ color:var(--ink);
+ background-color:#f4f7e9;
+ background-image:
+  radial-gradient(circle at 8% 12%,rgba(255,193,93,.23) 0 3px,transparent 4px),
+  radial-gradient(circle at 92% 22%,rgba(89,183,190,.18) 0 4px,transparent 5px),
+  radial-gradient(circle at 15% 82%,rgba(248,158,105,.18) 0 3px,transparent 4px),
+  repeating-linear-gradient(0deg,rgba(99,143,146,.045) 0 1px,transparent 1px 28px),
+  linear-gradient(135deg,#f5f8e9,#e9f6f5 48%,#fff0d9);
+ background-attachment:fixed
+}
+body:before{
+ content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.36;
+ background-image:radial-gradient(#b7c9bd .7px,transparent .7px);
+ background-size:9px 9px
+}
+header{
+ background:rgba(255,252,239,.94);border-bottom:3px solid #f2c36e;
+ box-shadow:0 4px 14px rgba(49,88,99,.08)
+}
+.brand{color:#214d68}
+.brand span{color:#e17e35}
+nav a{color:#28596d;font-weight:700;text-decoration:none}
+nav a:hover{color:#e27b32}
+.hero{
+ position:relative;overflow:hidden;
+ background:linear-gradient(125deg,#bfeee9 0%,#d9efff 48%,#ffe0a9 100%);
+ border:3px solid #fff;border-radius:0 0 34px 34px;
+ box-shadow:0 12px 0 rgba(230,180,95,.22),var(--shadow)
+}
+.hero:before{
+ content:"";position:absolute;top:18px;right:7%;width:112px;height:28px;
+ background:rgba(255,210,112,.72);transform:rotate(7deg);
+ border:1px dashed rgba(160,111,44,.35);border-radius:4px
+}
+.hero:after{
+ border:2px dashed rgba(255,255,255,.9);
+ box-shadow:0 0 0 12px rgba(255,255,255,.18),0 0 0 24px rgba(255,255,255,.12)
+}
+.eyebrow{
+ display:inline-block;background:#fff6d9;color:#a75c22;padding:5px 13px;
+ border:2px dashed #e9b75e;border-radius:999px;font-weight:700
+}
+h1{color:#174c68;text-shadow:2px 2px 0 rgba(255,255,255,.75)}
+.hero p{color:#345e70}
+.btn{
+ background:#138b91;border:2px solid #fff;border-radius:999px;
+ box-shadow:0 4px 0 #0c6870;font-weight:700
+}
+.btn.alt{background:#fff4d8;color:#24516a;border:2px solid #e8b35b;box-shadow:0 4px 0 #d6a04b}
+.stats{gap:14px}
+.stat{
+ background:rgba(255,255,255,.7);border:2px dashed #e8c27d;
+ border-radius:15px;padding:12px
+}
+.stat b{color:#0b858c}
+section:not(.hero):not(.closing){position:relative}
+section:not(.hero):not(.closing) .section-head{position:relative}
+section:not(.hero):not(.closing) .section-head:after{
+ content:"";display:block;width:92px;height:7px;margin-top:10px;
+ background:linear-gradient(90deg,#f2ad4e 0 33%,#55b8b2 33% 66%,#8dbce5 66%);
+ border-radius:99px
+}
+#objects{background:rgba(255,253,245,.78);border:3px solid #fff;border-radius:28px;margin-top:30px;padding:34px 26px;box-shadow:var(--shadow)}
+#objects:before{
+ content:"";position:absolute;top:-13px;left:42px;width:130px;height:26px;
+ background:#f7d98d;border:1px dashed #d7a64d;transform:rotate(-3deg);border-radius:4px
+}
+.search,.filter{
+ background:#fff;border:2px solid #cce3e7;border-radius:13px;
+ box-shadow:inset 0 2px 4px rgba(41,89,102,.05)
+}
+.card{
+ position:relative;background:#fffdf7;border:2px solid #fff;border-radius:19px;
+ box-shadow:0 5px 0 #d8e7df,0 10px 22px rgba(38,77,90,.10);
+ overflow:hidden
+}
+.card:before{
+ content:"";position:absolute;z-index:2;top:9px;left:50%;width:48px;height:13px;
+ transform:translateX(-50%) rotate(-2deg);background:rgba(255,211,117,.75);
+ border:1px dashed rgba(173,124,48,.35);border-radius:3px
+}
+.card:hover{transform:translateY(-5px) rotate(-.25deg);box-shadow:0 8px 0 #cbded7,0 16px 26px rgba(38,77,90,.15)}
+.photo{background:linear-gradient(135deg,#c5eee9,#ffe1b3);border-bottom:4px solid #fff}
+.photo img{filter:saturate(1.08) contrast(1.02)}
+.card-body{background:linear-gradient(180deg,#fffefa,#fff9eb)}
+.meta{
+ display:inline-block;background:#e5f5f1;color:#137c7f;
+ padding:3px 10px;border-radius:999px;font-weight:700
+}
+h3{color:#20516b}
+.card p{color:#536d79}
+.sources{border-top:1px dashed #d5c28e;padding-top:12px}
+.sources a{color:#087f86;font-weight:700}
+.timeline{
+ background:linear-gradient(135deg,rgba(255,238,197,.94),rgba(222,244,246,.94));
+ border:3px solid #fff;border-radius:25px;padding:28px;
+ box-shadow:var(--shadow)
+}
+.era{
+ background:#fffdf5;border:2px dashed #e8c27c;border-top:6px solid #eaa64c;
+ border-radius:13px;padding:15px;box-shadow:0 4px 0 rgba(211,181,119,.2)
+}
+.era:nth-child(even){border-top-color:#48aaa5}
+.mapbox{border:5px solid #fff;border-radius:20px;box-shadow:0 8px 0 #c8e1df,var(--shadow);overflow:hidden}
+.mapnote{background:#fff8df;border:1px dashed #dfb45d;border-radius:12px;padding:12px}
+.fact{
+ background:linear-gradient(145deg,#e2f7f0,#fff0d2);
+ border:2px dashed #a9d6c9;border-radius:17px;box-shadow:0 5px 0 rgba(107,166,155,.12)
+}
+.task{
+ position:relative;background:#fffdf6;border:2px dashed #e6bd70;
+ border-radius:17px;box-shadow:0 5px 0 rgba(221,181,106,.2)
+}
+.task:before{color:#e28a36}
+.closing{
+ background:linear-gradient(125deg,#c7f0e8,#d8edff 55%,#ffe4b4);
+ border:3px solid #fff;border-radius:28px;box-shadow:var(--shadow)
+}
+footer{background:#214b60;border-top:7px solid #f0bd62}
+footer a{color:#ffe2a6}
+@media(max-width:700px){
+ #objects{padding:25px 15px;border-radius:20px}
+ .timeline{padding:20px 14px}
+ .hero:before{right:4%;width:75px}
+}
+
+
+/* Две фотографии резиденции: внешний вид и музейная экспозиция */
+.card[data-name*="резиденция"] .photo{display:grid;grid-template-columns:1fr 1fr;gap:4px;align-items:stretch}
+.card[data-name*="резиденция"] .photo img{width:100%;height:225px;min-height:225px;object-fit:cover}
+.card[data-name*="резиденция"] .photo-credit{grid-column:1/-1}
+@media(max-width:520px){
+ .card[data-name*="резиденция"] .photo img{height:155px;min-height:155px}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><div class="brand">Петропавловск<span>архитектура сквозь время</span></div><nav><a href="#objects">Объекты</a><a href="#map">Карта</a><a href="#time">Хронология</a><a href="#facts">Факты</a><a href="#young">Юный краевед</a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap">
+<div class="eyebrow">Исторический путеводитель · Северный Казахстан</div>
+<h1>ПЕТРОПАВЛОВСК:<br/>АРХИТЕКТУРА<br/>СКВОЗЬ ВРЕМЯ</h1>
+<p>История города в зданиях, улицах и памятниках.</p>
+<p>Каждое старинное здание хранит свою историю. Оно рассказывает о людях, событиях, традициях и жизни прежних поколений. Давай научимся читать эти истории!</p>
+<div class="actions"><a class="btn" href="#objects">Начать путешествие</a><a class="btn alt" href="#map">Исследовать карту</a></div>
+<div class="stats"><div class="stat"><b>8</b><small>объектов для изучения</small></div><div class="stat"><b>5</b><small>исторических периодов</small></div><div class="stat"><b>8</b><small>историй для знакомства</small></div></div>
+<div class="hero-note">«Петропавловск — город, в котором каждое здание рассказывает свою историю. Давай откроем её вместе!»</div>
+</div></section>
+<section id="objects"><div class="wrap">
+<div class="section-head"><div><div class="eyebrow">Архитектурные сокровища</div><h2>Восемь историй города</h2></div><p>Познакомься с известными зданиями и культурными местами Петропавловска. Короткие описания помогут увидеть, чем интересен каждый объект.</p></div>
+<div class="toolbar"><input aria-label="Поиск объектов" class="search" id="search" placeholder="Найти здание или музей…"/><select class="filter" id="period"><option value="all">Все периоды</option><option value="xix">XIX век</option><option value="xx">Начало XX века</option><option value="xxi">XXI век</option><option value="other">Другие даты / требуют уточнения</option></select></div>
+<div class="cards" id="cards">
+<article class="card" data-name="мечеть кызылжар центральная мечеть" data-period="xxi"><div class="photo has-image"><img alt="Центральная мечеть «Қызылжар» — фото Mosqpedia" loading="lazy" src="https://mosqpedia.org/masajid/kyzylzhar-mosque/28zbcwaxjmySPMQu3OymhG8j6AYvbBWCgih2uwVs.jpeg"/><span class="photo-credit"><a href="https://mosqpedia.org/masajid/kyzylzhar-mosque/" rel="noopener" target="_blank">Центральная мечеть «Қызылжар» — фото Mosqpedia</a></span></div><div class="card-body"><div class="meta">Современная религиозная архитектура</div><h3>Центральная мечеть «Қызылжар»</h3><p>Одна из известных мечетей Петропавловска и важное место религиозной жизни города. Её название связано с историческим названием местности — Қызылжар.</p><div class="sources"><a href="https://kazislam.kz/ru/2021/06/sakral-nye-kul-tovye-ob-ekty-sko/" rel="noopener" target="_blank">Источник: официальный / профильный материал</a></div></div></article>
+<article class="card" data-name="собор святых апостолов петра павла собор" data-period="xix"><div class="photo has-image"><img alt="Собор святых апостолов Петра и Павла — фотография здания" loading="lazy" src="https://tur-ray.ru/wp-content/uploads/2022/08/sobor-svyatyh-apostolov-petra-i-pavla.jpg"/><span class="photo-credit"><a href="https://tur-ray.ru/petropavlovsk-attractions.html" rel="noopener" target="_blank">Собор святых апостолов Петра и Павла — фотография здания</a></span></div><div class="card-body"><div class="meta">XIX век · православная архитектура</div><h3>Собор святых апостолов Петра и Павла</h3><p>Православный храм, который является заметной частью исторического облика Петропавловска. Его строительство завершили в 1844 году; прежде собор назывался Покровским.</p><div class="sources"><a href="https://www.gov.kz/org/sko/press/article/details/1581?lang=en" rel="noopener" target="_blank">Источник: официальный / профильный материал</a></div></div></article>
+<article class="card" data-name="дом купца янгуразова дом невесты" data-period="other"><div class="photo has-image"><img alt="Дом купца Янгуразова во время реставрации — 7152.kz" loading="lazy" src="https://s.7152.kz/img/section/newsIcon/is/2/photo2024-11-19-141241_673c766dabf33.jpeg"/><span class="photo-credit"><a href="https://www.7152.kz/news/3861002/dom-nevesty-legenda-kupeceskoj-epohi-ozivaet-v-petropavlovske" rel="noopener" target="_blank">Дом купца Янгуразова во время реставрации — 7152.kz</a></span></div><div class="card-body"><div class="meta">Купеческая архитектура · рубеж XIX–XX веков</div><h3>Дом купца Янгуразова («Дом невесты»)</h3><p>Купеческий особняк начала XX века, напоминающий о торговой и общественной жизни старого Петропавловска. Дом входил в историческую застройку усадьбы купца Янгуразова.</p><div class="sources"><a href="https://old.adilet.zan.kz/rus/docs/V1900018756" rel="noopener" target="_blank">Источник: официальный / профильный материал</a></div></div></article>
+<article class="card" data-name="романовское училище училище" data-period="xx"><div class="photo has-image"><img alt="Романовское училище — фотография Inform.kz" loading="lazy" src="https://img.inform.kz/kazinform-photobank/media/2023-09-12/c633d253-396c-43d6-8852-9ff0e2557267.webp"/><span class="photo-credit"><a href="https://www.inform.kz/ru/110-let-nazad-nachalos-stroitel-stvo-romanovskogo-uchilischa-v-petropavlovske_a4048412" rel="noopener" target="_blank">Романовское училище — фотография Inform.kz</a></span></div><div class="card-body"><div class="meta">Начало XX века · образование</div><h3>Романовское училище</h3><p>Историческое здание учебного заведения, построенное в 1913–1915 годах. Сегодня оно продолжает быть частью образовательной жизни города.</p><div class="sources"><a href="https://www.gov.kz/memleket/entities/sko-madeniet/press/article/details/36760" rel="noopener" target="_blank">Источник: официальный / профильный материал</a></div></div></article>
+<article class="card" data-name="ботанический сад растения" data-period="xx"><div class="photo has-image"><img alt="Ботанический сад Петропавловска — фотография Sputnik Казахстан" loading="lazy" src="https://sputnik.kz/img/1413/50/14135063_0%3A0%3A1400%3A933_600x0_80_0_0_06b2c022717075e27773cf167b2ad128.jpg"/><span class="photo-credit"><a href="https://ru.sputnik.kz/20200601/Botanicheskiy-sad-s-vekovoy-istoriey-otkrylsya-v-Petropavlovske-posle-rekonstruktsii-14135528.html" rel="noopener" target="_blank">Ботанический сад Петропавловска — фотография Sputnik Казахстан</a></span></div><div class="card-body"><div class="meta">1912 год · природа и наука</div><h3>Ботанический сад Петропавловска</h3><p>Зелёное пространство, где собраны растения из разных уголков мира. Здесь можно познакомиться с оранжереей, зимним садом и разнообразием растительного мира.</p><div class="sources"><a href="https://sputnik.kz/20200601/Botanicheskiy-sad-s-vekovoy-istoriey-otkrylsya-v-Petropavlovske-posle-rekonstruktsii-14135528.html" rel="noopener" target="_blank">Источник: официальный / профильный материал</a></div></div></article>
+<article class="card" data-name="историко краеведческий музей краеведческий" data-period="xx"><div class="photo has-image"><img alt="Фасад Северо-Казахстанского областного историко-краеведческого музея — фото государственного каталога e-museum.kz" loading="lazy" src="https://crm.e-museum.kz/emuseum/museum/MuseumGal/061269fc-9f87-4bff-8871-7f2512fcdeb3.jpg"/><span class="photo-credit"><a href="https://e-museum.kz/ru/museum/68da37991b650f90c-ru/" rel="noopener" target="_blank">Фото: Государственный каталог музеев Казахстана — e-museum.kz</a></span></div><div class="card-body"><div class="meta">1924 год · история и культура</div><h3>Северо-Казахстанский областной историко-краеведческий музей</h3><p>Музей знакомит с природой, археологией, историей и культурой Северного Казахстана. Его экспозиции помогают проследить путь края от древнейших времён до наших дней.</p><div class="sources"><a href="https://www.gov.kz/org/sko/press/article/details/1455?lang=ru" rel="noopener" target="_blank">Источник: официальный / профильный материал</a></div></div></article>
+<article class="card" data-name="резиденция абылай хана музейный комплекс" data-period="xix"><div class="photo has-image"><img alt="Музейный комплекс «Резиденция Абылай хана» — фото комплекса" loading="lazy" src="https://www.votpusk.ru/thumb.php?h=400&amp;s=https%3A%2F%2Fstatic.votpusk.ru%2Fattractions%2F23693%2F119453.jpg&amp;w=700"/><span class="photo-credit"><a href="https://kazakhstan.travel/ru/attractions/348" rel="noopener" target="_blank">Фото комплекса и экспозиции: Kazakhstan.travel</a></span><img alt="Экспозиционный зал музейного комплекса «Резиденция Абылай хана» — фото Kazakhstan.travel" loading="lazy" src="https://kazakhstan.travel/media/sko-1-1.jpg"/></div><div class="card-body"><div class="meta">1824–1829 годы · историко-архитектурный комплекс</div><h3>Музейный комплекс «Резиденция Абылай хана»</h3><p>Музейный комплекс посвящён Абылай хану и истории его эпохи. В его состав входят исторический дом, здание канцелярии, дом для приезжих и баня.</p><div class="sources"><a href="https://kazakhstan.travel/ru/attractions/348" rel="noopener" target="_blank">Источник: официальный / профильный материал</a></div></div></article>
+<article class="card" data-name="музей изобразительных искусств дом юзефовича" data-period="xx"><div class="photo has-image"><img alt="Бывший дом купца Юзефовича, ныне музей изобразительных искусств — Kazpravda.kz" loading="lazy" src="https://kazpravda.kz/media/news/2022/04/12/6_c6K4X51.jpeg"/><span class="photo-credit"><a href="https://kazpravda.kz/n/derevyannyy-osobnyak-kuptsa-yuzefovicha-ne-tolko-prekrasno-sohranilsya-no-i-stal-ukrasheniem-petropavlovska/" rel="noopener" target="_blank">Бывший дом купца Юзефовича, ныне музей изобразительных искусств — Kazpravda.kz</a></span></div><div class="card-body"><div class="meta">1909 год · купеческий особняк и искусство</div><h3>Северо-Казахстанский областной музей изобразительных искусств</h3><p>Музей расположен в бывшем доме купца Юзефовича — памятнике архитектуры. В коллекции представлены произведения живописи, графики, скульптуры и декоративно-прикладного искусства.</p><div class="sources"><a href="https://kazakhstan.travel/ru/attractions/362" rel="noopener" target="_blank">Источник: официальный / профильный материал</a></div></div></article>
+</div>
+<p class="small hidden" id="empty">По вашему запросу ничего не найдено. Попробуйте изменить поиск.</p>
+</div></section>
+<section class="timeline" id="map"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Ориентир в городе</div><h2>Найди исторические сокровища</h2></div><p>Карта помогает увидеть расположение подтверждённых точек. Для объектов, чьи точные координаты пока не подтверждены, не ставим приблизительные метки.</p></div>
+<div class="mapbox"><iframe loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=69.105%2C54.855%2C69.15%2C54.885&amp;layer=mapnik&amp;marker=54.87360%2C69.11720" title="Карта Петропавловска"></iframe><div class="mapnote">На карте показан район центра Петропавловска; маркер указывает на музейный комплекс «Резиденция Абылай хана» — 54.87360, 69.11720. Остальные объекты не отмечены без проверки координат. Для остальных объектов точные координаты нужно сверить по официальным адресам и картографическим данным. <a href="https://www.openstreetmap.org/?mlat=54.87360&amp;mlon=69.11720#map=15/54.87360/69.11720" rel="noopener" target="_blank">Открыть карту крупнее</a>.</div></div></div></section>
+<section id="time"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Путешествие во времени</div><h2>Город меняется — история остаётся</h2></div><p>Выбери эпоху и посмотри, какие сюжеты помогают её представить.</p></div>
+<div class="timeline-list">
+<div class="era"><strong>XVIII век</strong><p>1752 — начало строительства крепости Святого Петра. Эпоха Абылай хана и дипломатических связей.</p><a href="#objects">Резиденция Абылай хана</a></div>
+<div class="era"><strong>XIX век</strong><p>Развитие религиозной, купеческой и городской архитектуры.</p><a href="#objects">Собор · Дом Янгуразова</a></div>
+<div class="era"><strong>1900–1915</strong><p>Рост общественных и образовательных зданий, развитие городской среды.</p><a href="#objects">Дом Юзефовича · Романовское училище</a></div>
+<div class="era"><strong>XX век</strong><p>Развитие музейного дела, науки и культуры.</p><a href="#objects">Музеи · Ботанический сад</a></div>
+<div class="era"><strong>XXI век</strong><p>Современные культурные пространства и религиозные сооружения.</p><a href="#objects">Мечеть «Қызылжар»</a></div>
+</div></div></section>
+<section class="timeline" id="facts"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Знаешь ли ты?</div><h2>Интересные факты</h2></div><p>Небольшие открытия о зданиях, музеях и зелёных уголках нашего города.</p></div>
+<div class="fact-grid">
+<div class="fact"><b>Собор с долгой историей</b>Первую церковь заложили в 1803 году, а каменный храм — в 1813 году.</div>
+<div class="fact"><b>Дом, окутанный легендой</b>История «Дома невесты» известна в нескольких версиях. Легенду важно отличать от архивного факта.</div>
+<div class="fact"><b>Дом Абылай хана</b>Сохранившееся каменное здание относится к 1824–1829 годам, а музейный комплекс открыт в 2008 году.</div>
+<div class="fact"><b>Сад с вековой историей</b>Туристский портал СКО указывает 1912 год основания ботанического сада.</div>
+<div class="fact"><b>Дом Юзефовича</b>В государственном перечне памятников здание указано под 1909 годом.</div>
+<div class="fact"><b>Музей — это не только экспонаты</b>История учреждения и история здания, где оно размещено, — две разные, но связанные истории.</div>
+</div></div></section>
+<section id="young"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Исследуй сам</div><h2>Юный краевед</h2></div><p>Попробуй стать исследователем: наблюдай, сравнивай, задавай вопросы и делай выводы.</p></div>
+<div class="tasks">
+<div class="task">Найди на фотографии старинного здания арку, колонну, лепнину или необычное окно.</div>
+<div class="task">Сравни старую и современную фотографию одного объекта. Что изменилось?</div>
+<div class="task">Определи, для чего здание использовалось раньше и для чего оно служит сегодня.</div>
+<div class="task">Выбери здание, которое хотел бы посетить. Объясни свой выбор в 3–4 предложениях.</div>
+<div class="task">Составь короткий рассказ «История одного здания».</div>
+<div class="task">Предложи три правила, которые помогут сохранить историческое наследие Петропавловска.</div>
+</div></div></section>
+<section class="closing"><div class="eyebrow">Береги историю своего города</div><blockquote>«Зная историю своего края, мы сохраняем его будущее!»</blockquote><p>Старинные здания помогают понять, как жили люди до нас. Бережное отношение к ним начинается с любознательности и уважения.</p></section>
+</main>
+<footer><div class="wrap"><div class="footlinks"><a href="#objects">Объекты</a><a href="#map">Карта</a><a href="#time">Временная шкала</a><a href="#young">Юный краевед</a></div><p>Учебный краеведческий проект «Петропавловск: архитектура сквозь время».</p><p>Материалы подготовлены по публикациям акимата Северо-Казахстанской области, государственному перечню памятников и туристскому порталу Kazakhstan.travel. Ссылки на использованные материалы размещены в карточках объектов.</p><p>Карта © OpenStreetMap contributors. Для фотографий используйте изображения с подтверждённой подписью, авторством и разрешёнными условиями использования.</p></div></footer>
+<script>
+const search=document.getElementById('search'),period=document.getElementById('period'),cards=[...document.querySelectorAll('.card')],empty=document.getElementById('empty');
+function filterCards(){let q=search.value.trim().toLowerCase(),p=period.value,n=0;cards.forEach(c=>{let ok=c.dataset.name.includes(q)&&(p==='all'||c.dataset.period===p);c.classList.toggle('hidden',!ok);if(ok)n++});if(empty)empty.classList.toggle('hidden',n>0)}
+search.addEventListener('input',filterCards);period.addEventListener('change',filterCards);
+</script>
+</body></html>
